@@ -112,3 +112,21 @@ python3
 。      記号,句点,*,*,*,*,。,。,。
 EOS
 ```
+
+
+## 開発メモ
+
+### submoduleを更新する
+
+流れは簡単。
+
+- サブモジュールの任意のコミットをチェックアウトする。
+- メインモジュールでサブモジュールの変更をコミットする。
+
+```shell
+cd mecab
+git checkout d717d499afe17b6d8e3899f8c037d41f3a6c5d8a
+cd ..
+git add mecab
+git commit "update mecab"
+```
