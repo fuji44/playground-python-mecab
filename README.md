@@ -16,9 +16,9 @@ MeCabはGit submoduleで参照しています。MeCabのアップストリーム
 
 [devcontainer](https://code.visualstudio.com/docs/remote/containers)を利用すれば、これらが整ったコンテナで実行できます。
 
-## インストール
+## 使えるようにするまでの手順
 
-### チェックアウト
+### 1. チェックアウト
 
 #### Option 1: (推奨) devcontainer
 
@@ -50,7 +50,7 @@ git submodule update --init
 
 後の手順を実行するには、前提に記述したソフトウェア類が必要なため、別途準備する必要があることに注意してください。
 
-### MeCabのビルド・インストール
+### 2. MeCabのビルド・インストール
 
 mecabと辞書(ipadic)、Pythonバインディングパッケージをビルド・インストールします。
 
@@ -88,7 +88,7 @@ cd mecab-ipadic-neologd
 ./bin/install-mecab-ipadic-neologd -n
 ```
 
-### 確認
+### 3. 使ってみる
 
 mecabコマンドが正しく動作することを確認します。
 
