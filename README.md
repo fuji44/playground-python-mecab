@@ -1,9 +1,9 @@
 # playground-python-mecab
 
-Pythonでmecabを利用するサンプルコードです。
+Pythonで[MeCab](https://taku910.github.io/mecab/)を利用する検証リポジトリです。
 よく利用される辞書の mecab-ipadic-neologd も使ってみます。
 
-mecabはGit submoduleで参照しています。mecabのアップストリームが更新された場合でも、このリポジトリで参照されるコミット変更されないため、
+MeCabはGit submoduleで参照しています。MeCabのアップストリームが更新された場合でも、このリポジトリで参照されるコミット変更されないため、
 更新したい場合はGit submoduleの作法で更新してください。
 
 ## 前提
@@ -52,7 +52,7 @@ git submodule update --init
 
 ### MeCabのビルド・インストール
 
-mecabと辞書(ipadic)、Pythonバインディングパッケージをビルド
+mecabと辞書(ipadic)、Pythonバインディングパッケージをビルド・インストールします。
 
 ```shell
 # mecab
