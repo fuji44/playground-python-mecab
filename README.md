@@ -1,7 +1,7 @@
 # playground-python-mecab
 
 Pythonで[MeCab](https://taku910.github.io/mecab/)を利用する検証リポジトリです。
-よく利用される辞書の mecab-ipadic-neologd も使ってみます。
+よく利用される辞書の [mecab-ipadic-NEologd](https://github.com/neologd/mecab-ipadic-neologd) も使ってみます。
 
 MeCabはGit submoduleで参照しています。MeCabのアップストリームが更新された場合でも、このリポジトリで参照されるコミット変更されないため、
 更新したい場合はGit submoduleの作法で更新してください。
