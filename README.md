@@ -6,8 +6,40 @@ Pythonでmecabを利用するサンプルコードです。
 mecabはGit submoduleで参照しています。mecabのアップストリームが更新された場合でも、このリポジトリで参照されるコミット変更されないため、
 更新したい場合はGit submoduleの作法で更新してください。
 
+## 前提
+
+以下を前提にしています。
+
+- Python3系がインストールされていること
+- C++コンパイラ(gccなど)がインストールされていること
+- swigがインストールされていること
+
+[devcontainer](https://code.visualstudio.com/docs/remote/containers)を利用すれば、これらが整ったコンテナで実行できます。
+
 ## インストール
 
+### チェックアウト
+
+#### Option 1: (推奨) devcontainer
+
+> devcontainerを使うには、VSCodeとRemote Containers拡張機能が必要なので、事前にインストールしておいてください。使い方は、[公式ドキュメント](https://code.visualstudio.com/docs/remote/containers)を参照してください。
+
+VSCode Remote Containersを使って、このリポジトリをコンテナボリュームにクローンするのがもっとも簡単です。
+
+既にローカル端末にクローンしている場合は、それを利用することもできますが、この場合はパフォーマンスが低下します。私の環境ではターミナルでのコマンド操作をためらうレベルでおそくなったので、コンテナボリュームへのクローンをお勧めします。
+
+初回は、コンテナイメージをビルドするため起動までに時間がかかります。2回目以降はビルドされたコンテナを利用するので早いです。
+
+VSCodeが開いたらターミナルで、以下のコマンドを実行し、submoduleを取得してください。
+
+```shell
+git submodule update --init
+```
+
+
+#### Option 2: ローカル
+
+ローカル端末に直接インストールする場合は、単純にgit cloneするだけです。
 playground-python-mecabをサブモジュール含めてチェックアウトします。
 
 ```shell
@@ -15,6 +47,8 @@ git clone https://github.com/fuji44/playground-python-mecab.git
 cd playground-python-mecab
 git submodule update --init
 ```
+
+後の手順を実行するには、前提に記述したソフトウェア類が必要なため、別途準備する必要があることに注意してください。
 
 ### MeCabのビルド・インストール
 
