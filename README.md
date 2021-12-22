@@ -28,20 +28,15 @@ make
 make check
 sudo make install
 sudo ldconfig
-```
 
-```shell
 # mecab-ipadic
-cd ./mecab/mecab-ipadic
+cd ../mecab-ipadic
 ./configure --with-charset=utf8
 make
 sudo make install
-```
 
-
-```shell
 # mecab python bind
-cd ./mecab/mecab/swig
+cd ../mecab/swig
 make python
 cd ../python
 python3 setup.py build
